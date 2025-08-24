@@ -25,7 +25,7 @@ import Strategy from '../strategy';
 import Copytrading from '../copytrading';
 import Botlist from '../botlist';
 import { FaChartBar, FaChartLine, FaPuzzlePiece, FaChessKnight, FaUsers, FaShieldAlt, FaRobot, FaTachometerAlt, FaExchangeAlt, FaCopy, FaLightbulb } from 'react-icons/fa';
-import platform_config from '../../../../core/src/App/Constants/platform-config';
+
 
 
 const AppWrapper = observer(() => {
@@ -57,7 +57,7 @@ const AppWrapper = observer(() => {
 
 
     const hash = ['dashboard', 'bot_builder', 'chart', 'tutorial', 'botlist', 'finesttool', 'copytrading', 'risk_management_calculator', 'strategy'];
-    const trader_config = platform_config.find(cfg => cfg.name === 'Trader');
+
 
     let tab_value: number | string = active_tab;
     const GetHashedValue = (tab: number) => {
@@ -223,21 +223,18 @@ const AppWrapper = observer(() => {
 
                         <div
                             label={
-                                <span style={{ color: '#ffffff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
-                                    {trader_config?.icon && (
-                                        <img src={trader_config.icon} alt="Trader" style={{ width: 14, height: 14, marginRight: 4 }} />
-                                    )}
+                                <span style={{ color: '#fff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
+                                    <img src={trader_config?.icon} alt="Trader" style={{ width: 14, height: 14, marginRight: 4 }} />
                                     {trader_config?.title ? trader_config.title() : 'Trader'}
                                 </span>
                             }
-                            id='id-trader'
-                            onClick={() => {
-                                if (trader_config?.link_to) {
-                                    window.location.href = trader_config.link_to;
-                                }
-                            }}
+                            id="id-trader"
                         >
-                            {/* Optionally, show description or info here */}
+                            <iframe
+                                src={trader_config?.link_to || '/trader'}
+                                style={{ width: '100%', height: 'calc(100vh - 100px)', border: 'none' }}
+                                title="Trader"
+                            />
                         </div>
 
 
