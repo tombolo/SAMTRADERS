@@ -42,7 +42,7 @@ const TradersHubHomeButton = observer(() => {
         >
             
             <Text className='traders-hub-header__tradershub--text'>
-                <a href='https://derivstart.com/'>
+                <a href='https://samtraders.vercel.app/'>
                     <Localize i18n_default_text="Sam Traders" />
                 </a>
             </Text>

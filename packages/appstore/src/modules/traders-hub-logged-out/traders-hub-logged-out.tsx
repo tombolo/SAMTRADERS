@@ -40,7 +40,7 @@ const TradersHubLoggedOut = observer(() => {
                 >
                     <GetStartedTradingBanner />
                     <Text size={isDesktop ? 'm' : 'xsm'} weight='bold' color='prominent'>
-                       <a href='https://derivstart.com/'>
+                       <a href='https://samtraders.vercel.app/'>
                            <Localize i18n_default_text="Sam Traders" />
                         </a>
                     </Text>

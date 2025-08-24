@@ -369,7 +369,7 @@ const ToggleMenuDrawer = observer(({ platform_config }) => {
 
                                 <MobileDrawer.Item>
                                     <a 
-                                        href='https://derivstart.com/'
+                                        href='https://samtraders.vercel.app/'
                                         className='dc-menu-link'
                                         onClick={toggleDrawer}
                                     >
