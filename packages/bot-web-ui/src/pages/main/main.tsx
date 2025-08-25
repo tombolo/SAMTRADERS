@@ -221,21 +221,7 @@ const AppWrapper = observer(() => {
                         </div>
 
 
-                        <div
-                            label={
-                                <span style={{ color: '#fff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
-                                    <img src={trader_config?.icon} alt="Trader" style={{ width: 14, height: 14, marginRight: 4 }} />
-                                    {trader_config?.title ? trader_config.title() : 'Trader'}
-                                </span>
-                            }
-                            id="id-trader"
-                        >
-                            <iframe
-                                src={trader_config?.link_to || '/trader'}
-                                style={{ width: '100%', height: 'calc(100vh - 100px)', border: 'none' }}
-                                title="Trader"
-                            />
-                        </div>
+                        
 
 
                         <div
