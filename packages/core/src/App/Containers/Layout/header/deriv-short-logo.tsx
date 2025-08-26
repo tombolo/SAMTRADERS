@@ -1,14 +1,14 @@
 import React from 'react';
-import LOGO from '../../../Logo/SAM.png';
+import LOGO from '../../../Logo/DUNAMIS.png';
 
 const DerivShortLogo = () => {
     return (
         <div className='header__menu-left-logo'>
-            <a href='https://samtraders.vercel.app/'>
+            <a href='https://dunamistraders.com/'>
                 <img
                     src={LOGO}
                     alt='Deriv Short Logoo'
-                    style={{ height: '35px', width: 'auto' }}
+                    style={{ height: '25px', width: 'auto' }}
                 />
             </a>
         </div>

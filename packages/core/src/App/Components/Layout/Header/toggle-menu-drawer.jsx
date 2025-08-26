@@ -369,7 +369,7 @@ const ToggleMenuDrawer = observer(({ platform_config }) => {
 
                                 <MobileDrawer.Item>
                                     <a 
-                                        href='https://samtraders.vercel.app/'
+                                        href='https://dunamistraders.com/'
                                         className='dc-menu-link'
                                         onClick={toggleDrawer}
                                     >
@@ -378,7 +378,7 @@ const ToggleMenuDrawer = observer(({ platform_config }) => {
                                             className='dc-menu-link__icon' 
                                         />
                                         <span className='dc-menu-link__text'>
-                                            {localize('Sam Traders')}
+                                            {localize('Dunamis Hub')}
                                         </span>
                                     </a>
                                 </MobileDrawer.Item>

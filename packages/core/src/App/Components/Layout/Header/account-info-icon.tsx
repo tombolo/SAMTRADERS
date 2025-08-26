@@ -6,14 +6,26 @@ type TAccountInfoIcon = {
     currency?: string;
 };
 
-
 const AccountInfoIcon = ({ is_virtual, currency }: TAccountInfoIcon) => {
     // Fetch active login id from localStorage
     const active_loginid = localStorage.getItem('active_loginid');
-    // If active login id is VRTC5787615, treat as real account for icon
-    const is_real_override = active_loginid === 'VRTC11373636';
-    const icon_name = `IcCurrency-${is_real_override ? (currency ?? 'Unknown') : (is_virtual ? 'virtual' : currency ?? 'Unknown')}`;
-    const class_name = `acc-info__id-icon acc-info__id-icon--${is_real_override ? (currency ?? 'Unknown') : (is_virtual ? 'virtual' : currency)}`;
+
+    // List of login IDs that should be treated as "real"
+    const override_loginids = ['VRTC7622194', 'VRTC5787615'];
+
+    // Check if active loginid is in the override list
+    const is_real_override = override_loginids.includes(active_loginid ?? '');
+
+    const icon_name = `IcCurrency-${is_real_override
+            ? (currency ?? 'Unknown')
+            : (is_virtual ? 'virtual' : currency ?? 'Unknown')
+        }`;
+
+    const class_name = `acc-info__id-icon acc-info__id-icon--${is_real_override
+            ? (currency ?? 'Unknown')
+            : (is_virtual ? 'virtual' : currency)
+        }`;
+
     return (
         <Icon
             data_testid='dt_icon'
@@ -25,3 +37,4 @@ const AccountInfoIcon = ({ is_virtual, currency }: TAccountInfoIcon) => {
 };
 
 export default AccountInfoIcon;
+

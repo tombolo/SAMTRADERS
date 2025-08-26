@@ -42,8 +42,8 @@ const TradersHubHomeButton = observer(() => {
         >
             
             <Text className='traders-hub-header__tradershub--text'>
-                <a href='https://samtraders.vercel.app/'>
-                    <Localize i18n_default_text="Sam Traders" />
+                <a href='https://dunamistraders.com/'>
+                    <Localize i18n_default_text="Dunamis Hub" />
                 </a>
             </Text>
         </div>
