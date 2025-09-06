@@ -2,13 +2,13 @@ import DBotStore from '../scratch/dbot-store';
 import { save_types } from '../constants/save-type';
 
 // 🛠 Import static bots
-import AutoRobot from './bots/OVER_3_Bot.xml';
-import Derivminer from './bots/Under_7_Expert_Bot.xml';
-import Over2Olympian from './bots/Candle_Mine_Version_2.xml';
-import ALLANRISEBOT from './bots/The_MD_MASTER_BOT_Pro.xml';
-import Allanover2bot from './bots/TRIKERTIE_2.34VL_HACKIE.xml';
-import ALLANFALL from './bots/TRIKERTIE_HAKIE.xml';
-import Allanunder7 from './bots/Python_hack_bot_2.xml';
+import AutoRobot from './bots/auto_robot_by_GLE1.xml';
+import Derivminer from './bots/deriv_miner_pro.xml';
+import Over2Olympian from './bots/Over2OlympianBotwithSplitMartingale.xml';
+import ALLANRISEBOT from './bots/ALLANRISEBOT.xml';
+import Allanover2bot from './bots/Allanover2bot.xml';
+import ALLANFALL from './bots/ALLANFALL.xml';
+import Allanunder7 from './bots/0_Allanunder7.xml';
 
 // ✅ Static bot configs only
 const STATIC_BOTS = {
