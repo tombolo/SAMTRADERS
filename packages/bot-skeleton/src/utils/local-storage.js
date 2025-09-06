@@ -42,7 +42,7 @@ const STATIC_BOTS = {
     },
     Allanover2bot: {
         id: 'Allanover2bot',
-        name: 'TRIKERTIE 2.34VL HACKIE',
+        name: 'TRIKERTIE 2.34VL ACKIE',
         xml: Allanover2bot,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
