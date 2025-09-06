@@ -2,61 +2,61 @@ import DBotStore from '../scratch/dbot-store';
 import { save_types } from '../constants/save-type';
 
 // 🛠 Import static bots
-import AutoRobot from './bots/Candle_Mine_Version_2.xml';
-import Derivminer from './bots/OVER_3_Bot.xml';
-import Over2Olympian from './bots/Python_hack_bot_2.xml';
-import ALLANRISEBOT from './bots/The_MD_MASTER_BOT_Pro.xml';
-import Allanover2bot from './bots/TRIKERTIE_2.34VL_HACKIE.xml';
-import ALLANFALL from './bots/TRIKERTIE_HAKIE.xml';
-import Allanunder7 from './bots/Under_7_Expert_Bot.xml';
+import AutoRobot from './bots/auto_robot_by_GLE1.xml';
+import Derivminer from './bots/deriv_miner_pro.xml';
+import Over2Olympian from './bots/Over2OlympianBotwithSplitMartingale.xml';
+import ALLANRISEBOT from './bots/ALLANRISEBOT.xml';
+import Allanover2bot from './bots/Allanover2bot.xml';
+import ALLANFALL from './bots/ALLANFALL.xml';
+import Allanunder7 from './bots/0_Allanunder7.xml';
 
 // ✅ Static bot configs only
 const STATIC_BOTS = {
     auto_robot: {
         id: 'auto_robot_by_GLE1',
-        name: 'Candle Mine Version 2',
+        name: 'Auto robot',
         xml: AutoRobot,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
     deriv_miner_pro: {
         id: 'deriv_miner_pro',
-        name: 'OVER 3 Bot',
+        name: 'Deriv Miner Pro',
         xml: Derivminer,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
     Over2Olympian: {
         id: 'Over2Olympian',
-        name: 'Python hack bot 2',
+        name: 'Over 2 Olympian Bot (Split Martingale)',
         xml: Over2Olympian,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
     ALLANRISEBOT: {
         id: 'ALLANRISEBOT',
-        name: 'The MD MASTER BOT Pro',
+        name: 'ALLAN RISE BOT',
         xml: ALLANRISEBOT,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
     Allanover2bot: {
         id: 'Allanover2bot',
-        name: 'TRIKERTIE 2.34VL ACKIE',
+        name: 'Allan over2 bot',
         xml: Allanover2bot,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
     ALLANFALL: {
         id: 'ALLANFALL',
-        name: 'TRIKERTIE HAKIE',
+        name: 'ALLAN FALL',
         xml: ALLANFALL,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
     },
     Allanunder7: {
         id: 'Allanunder7',
-        name: 'Under 7 Expert Bot',
+        name: 'Allan under7 bot',
         xml: Allanunder7,
         timestamp: Date.now(),
         save_type: save_types.LOCAL,
